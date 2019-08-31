@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+
+    <package name="default" namespace="/"
+             extends="struts-default,json-default">
+        <action name="login" class="com.imudges.web.action.LoginAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <action name="searchFirm" class="com.imudges.web.action.FirmAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <action name="searchCounseling" class="com.imudges.web.action.CounselingAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <action name="updateCounseling" class="com.imudges.web.action.CounselingUpdateAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <action name="searchLaw" class="com.imudges.web.action.LawAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <action name="searchJudgement" class="com.imudges.web.action.JudgementAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <action name="searchLawyer" class="com.imudges.web.action.LawyerAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <action name="loginAndRegister" class="com.imudges.web.action.RegisterAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <action name="searchEverything" class="com.imudges.web.action.MainSearchAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+        <!--<action name="caseConsult" class="com.imudges.web.action.CaseConsultAction">-->
+            <!--<result name="success" type="json">-->
+                <!--<param name="root">result</param>-->
+            <!--</result>-->
+        <!--</action>-->
+
+        <action name="caseConsultResult" class="com.imudges.web.action.CaseConsultResultAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <action name="userCaseConsultResult" class="com.imudges.web.action.SearchUserCaseAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+
+        <action name="judgementConsult" class="com.imudges.web.action.JudgementConsultAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <action name="getQuickConsultList" class="com.imudges.web.action.QuickConsultListAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <action name="getMyQuickConsultList" class="com.imudges.web.action.MyConsultQuickListAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <action name="getQuickConsultResult" class="com.imudges.web.action.QuickConsultResultAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <action name="submitQuickConsult" class="com.imudges.web.action.QuickConsultAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <action name="quickConsultReply" class="com.imudges.web.action.QuickConsultReplyAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <action name="deleteQuickConsultComment" class="com.imudges.web.action.DeleteQuickConsultCommentAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <action name="getQuickConsultReplyList" class="com.imudges.web.action.QuickConsultReplyListAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <action name="getCaseResult" class="com.imudges.web.action.PredictAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <action name="getNews" class="com.imudges.web.action.NewsAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <action name="getComments" class="com.imudges.web.action.CommentAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+    </package>
+</struts>
